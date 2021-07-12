@@ -5,21 +5,26 @@ export default makeStyles(() => ({
         fontFamily: "Lexend Exa, sans-serif",
     },
 
-    homeImg:{
+    navContainer:{
         width: "100%",
-        height: "100vh",
+        height: "8vh",
+        background: "black",
+        position: "fixed",
+        zIndex: 1,
         
     },
       
     navigationBar: {
-        position: "absolute",
+        opacity:1,
+        position: "fixed",
         top: "15px",
         left: "50%",
         transform: "translateX(-50%)",
         display: "inlineBlock",
-        border: "2px solid #ffe8fc",
+        marginTop:"0%",
         borderRadius: "30px",
         animation: "slide-in 1s ease-out",
+        zIndex:2,
 
     },
       
@@ -39,8 +44,11 @@ export default makeStyles(() => ({
             padding: "10px",
             transition: "background 0.2s",
             fontWeight: "500",
+            letterSpacing: "2px",
+            fontFamily: "'Pacifico', cursive",
 
             "& a": {
+                width: "100%",
                 color: "white",
                 textDecoration: "none",
                 textTransform: "uppercase",
@@ -58,7 +66,7 @@ export default makeStyles(() => ({
                 display: "block",
                 margin: "12px -12px",
                 padding: 0,
-                background: "white",
+                background: "black",
                 
                 transition: "opacity 0.2s, visibility 0.2s",
                 listStyleType: "none",
@@ -75,18 +83,18 @@ export default makeStyles(() => ({
 
             "&:hover": {
                 background: "transparent",
-                border: "2px solid #ED028A",
-                borderRight: "2px solid #e02a21",
-                borderBottom: "2px solid #e02a21",
+                border: "2px solid #ea9ef3",
+                borderRight: "2px solid #ea9ef3",
+                borderBottom: "2px solid #ea9ef3",
 
                 "& a": {
-                    color: "#EF018D",
+                    color: "#ea9ef3",
                 },
 
                 "& ul":{
                     visibility: "visible",
                     opacity: 1,
-                    boxShadow: "0px 3px 5px 2px white",
+                    boxShadow: "0px 3px 5px 2px blur",
                     
 
                 },

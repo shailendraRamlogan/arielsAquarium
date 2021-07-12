@@ -1,15 +1,19 @@
 import {makeStyles} from '@material-ui/core/styles';
+import homeImg from '../../assets/images/home.jpg';
 export default makeStyles(() => ({
 
     body: {
         fontFamily: "Lexend Exa, sans-serif",
+        backgroundImage: `url(${homeImg})`,
+        backgroundSize: "100% ",
+        backgroundPositionY:"7%",
     },
 
     homeImg:{
-        width: "100%",
         height: "100vh",
-        
+        width: "100%",
     },
+
     logo:{
         fontFamily: "'Pacifico', cursive",
         textAlign: "center",
@@ -18,12 +22,13 @@ export default makeStyles(() => ({
         color:"#ffe8fc",
         position: "absolute",
         width: "100%",
-        top: "30%",
+        height: "20%",
+        overflow: "hidden",
+        
+        backgroundSize: "100% ",
+        top: "15%",
         left: "50%",
         transform: "translate(-50%, -100%)",
-        animation: `$fadein ease 5s`,
-        animationIterationCount: 1,
-        animationFillMode: "forwards",
     },
 
 
@@ -58,9 +63,6 @@ export default makeStyles(() => ({
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -100%)",
-        animation: `$fadein ease 5s`,
-        animationIterationCount: 1,
-        animationFillMode: "forwards",
     },
 
     beginButton:{
@@ -75,14 +77,58 @@ export default makeStyles(() => ({
             width: "50px",
             height: "50px",
             marginLeft: "-12px",
-            borderLeft: "3px solid #fff",
-            borderBottom: "3px solid #fff",
+            borderLeft: "1px solid #fff",
+            borderBottom: "1px solid #fff",
             transform: "rotateZ(-45deg)",
-            animation: "$sdb06 3s infinite",
+            animation: "$sdb06 1.5s infinite",
             boxSizing: "border-box",
 
         }
     },
+
+    separator:{
+        backgroundColor:"#ffe8fc",
+        paddingBottom:"2%",
+        marginLeft: "10%",
+        marginRight: "10%",
+    },
+
+
+    formContainer:{
+        backgroundColor:"#ffe8fc",
+        paddingTop:"2%",
+        paddingBottom:"2%",
+        marginLeft: "10%",
+        marginRight: "10%",
+        marginTop: "15%",
+        alignItems: "center",
+        alignContent: "center",
+        borderRadius: "10px",
+    },
+
+    formHeading:{
+        textAlign: "center",
+    },
+
+    contactForm:{
+        alignItems: "center",
+        alignContent:"center",
+        alignSelf:"center",
+        textAlign: "center",
+    },
+
+    mapContainer:{
+        backgroundColor:"#ffe8fc",
+        paddingBottom:"2%",
+        paddingTop:"2%",
+        marginTop: "10%",
+    },
     
+    maps:{
+        
+        width: "80%",
+        height: "450px",
+        marginLeft: "10%",
+    }
        
 }));

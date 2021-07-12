@@ -1,4 +1,5 @@
 import {makeStyles} from '@material-ui/core/styles';
+import homeImg from '../../assets/images/home.jpg';
 export default makeStyles(() => ({
 
     body: {
@@ -6,10 +7,10 @@ export default makeStyles(() => ({
     },
 
     homeImg:{
-        width: "100%",
         height: "100vh",
-        
+        width: "100%",
     },
+
     logo:{
         fontFamily: "'Pacifico', cursive",
         textAlign: "center",
@@ -18,12 +19,13 @@ export default makeStyles(() => ({
         color:"#ffe8fc",
         position: "absolute",
         width: "100%",
-        top: "30%",
+        height: "20%",
+        overflow: "hidden",
+        backgroundImage: `url(${homeImg})`,
+        backgroundSize: "100% ",
+        top: "15%",
         left: "50%",
         transform: "translate(-50%, -100%)",
-        animation: `$fadein ease 5s`,
-        animationIterationCount: 1,
-        animationFillMode: "forwards",
     },
 
 
@@ -58,9 +60,6 @@ export default makeStyles(() => ({
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -100%)",
-        animation: `$fadein ease 5s`,
-        animationIterationCount: 1,
-        animationFillMode: "forwards",
     },
 
     beginButton:{
@@ -75,14 +74,17 @@ export default makeStyles(() => ({
             width: "50px",
             height: "50px",
             marginLeft: "-12px",
-            borderLeft: "3px solid #fff",
-            borderBottom: "3px solid #fff",
+            borderLeft: "1px solid #fff",
+            borderBottom: "1px solid #fff",
             transform: "rotateZ(-45deg)",
-            animation: "$sdb06 3s infinite",
+            animation: "$sdb06 1.5s infinite",
             boxSizing: "border-box",
 
         }
     },
     
+    secondImage:{
+        marginTop: "12.5%",
+    }
        
 }));
